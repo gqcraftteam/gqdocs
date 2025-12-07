@@ -183,6 +183,113 @@
     color: var(--text-color);
 }
 
+/* ===== 模组网格 ===== */
+.mods-grid-section {
+    margin: 2rem 0;
+}
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.mod-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-card:hover:not(.coming-soon) {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.mod-card.coming-soon {
+    background-color: var(--light-color);
+    opacity: 0.7;
+}
+
+.mod-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.mod-card h3 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.mod-version {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.mod-card.coming-soon .mod-version {
+    background-color: var(--text-color);
+}
+
+.mod-description {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.mod-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-tag {
+    background-color: #fef3c7;
+    color: #78350f;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.mod-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.mod-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+.mod-link.disabled {
+    color: var(--border-color);
+    cursor: not-allowed;
+}
+
+.mod-link.disabled:hover {
+    color: var(--border-color);
+    transform: none;
+}
+
 /* ===== 响应式 ===== */
 @media (max-width: 768px) {
     .docs-container {

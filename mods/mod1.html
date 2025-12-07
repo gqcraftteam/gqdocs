@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例模组 1 文档 - GQDocs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../docs-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>GQDocs</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../docs.html" class="active">技术文档</a></li>
+                <li><a href="../tools.html">工具箱</a></li>
+                <li><a href="../blog.html">博客</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 模组标题 -->
+    <section class="docs-header">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1>📦 示例模组 1</h1>
+                    <p>示例模组的详细文档和使用指南</p>
+                </div>
+                <div style="text-align: right;">
+                    <span style="display: inline-block; background: #10b981; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; font-weight: 600;">v1.0.0</span>
+                </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="../docs.html" style="color: white; text-decoration: none; background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 0.375rem; display: inline-block;">← 返回文档中心</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文档主体 -->
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <h3>文档导航</h3>
+            <ul class="toc">
+                <li><a href="#overview">模组概述</a></li>
+                <li><a href="#features">功能特性</a></li>
+                <li><a href="#install">安装说明</a></li>
+                <li><a href="#usage">使用教程</a></li>
+                <li><a href="#config">配置选项</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </aside>
+
+        <main class="docs-content">
+            <!-- 模组概述 -->
+            <section id="overview" class="doc-section">
+                <h2>模组概述</h2>
+                <p>示例模组 1 是一个为 Minecraft 设计的功能模组，提供了...</p>
+                <p><strong>开发者：</strong> GQCraft Team</p>
+                <p><strong>版本：</strong> 1.0.0</p>
+                <p><strong>Minecraft 版本：</strong> 1.20.x</p>
+                <p><strong>Forge 版本：</strong> 47.x+</p>
+            </section>
+
+            <!-- 功能特性 -->
+            <section id="features" class="doc-section">
+                <h2>功能特性</h2>
+                <ul>
+                    <li><strong>功能 1：</strong> 为游戏添加了新的装备系统</li>
+                    <li><strong>功能 2：</strong> 引入了高级合成机制</li>
+                    <li><strong>功能 3：</strong> 提供了新的生物群系和方块</li>
+                    <li><strong>功能 4：</strong> 优化了游戏性能</li>
+                </ul>
+            </section>
+
+            <!-- 安装说明 -->
+            <section id="install" class="doc-section">
+                <h2>安装说明</h2>
+                
+                <h3>前置要求</h3>
+                <ul>
+                    <li>Minecraft 1.20 或更高版本</li>
+                    <li>Minecraft Forge 47.0+</li>
+                    <li>Java 17 或更高版本</li>
+                </ul>
+
+                <h3>安装步骤</h3>
+                <ol>
+                    <li>下载 <code>mod1-1.0.0.jar</code> 文件</li>
+                    <li>将文件放入 <code>.minecraft/mods</code> 文件夹</li>
+                    <li>启动 Minecraft 并选择 Forge 启动器</li>
+                    <li>享受游戏！</li>
+                </ol>
+
+                <h3>验证安装</h3>
+                <p>在游戏的 Mods 菜单中，您应该能看到"示例模组 1"出现在模组列表中。</p>
+            </section>
+
+            <!-- 使用教程 -->
+            <section id="usage" class="doc-section">
+                <h2>使用教程</h2>
+                
+                <h3>基础用法</h3>
+                <p>模组安装后，您可以立即开始使用新功能。以下是一些基本使用方法：</p>
+                
+                <h3>合成配方</h3>
+                <div class="code-block">
+                    <pre><code>合成示例：
+- 材料 1 + 材料 2 → 新物品
+- 在工作台中放置相应材料
+- 将得到合成结果</code></pre>
+                </div>
+
+                <h3>高级功能</h3>
+                <p>模组还提供了一些高级功能供高级用户使用：</p>
+                <ul>
+                    <li>自定义配置选项</li>
+                    <li>与其他模组的兼容性</li>
+                    <li>扩展 API</li>
+                </ul>
+            </section>
+
+            <!-- 配置选项 -->
+            <section id="config" class="doc-section">
+                <h2>配置选项</h2>
+                <p>模组的配置文件位于 <code>.minecraft/config/mod1-config.toml</code></p>
+
+                <h3>常见配置</h3>
+                <div class="code-block">
+                    <pre><code"># 启用/禁用新功能
+enabled = true
+
+# 调整难度等级 (1-10)
+difficulty = 5
+
+# 启用调试模式
+debug_mode = false
+
+# 性能优化
+enable_optimization = true</code></pre>
+                </div>
+            </section>
+
+            <!-- 常见问题 -->
+            <section id="faq" class="doc-section">
+                <h2>常见问题</h2>
+                
+                <div class="faq-item">
+                    <h3>Q: 模组与其他模组冲突怎么办？</h3>
+                    <p>A: 大多数冲突可以通过更新模组或调整配置文件来解决。如果问题持续，请在官方论坛提交报告。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 我找不到新增的方块/物品？</h3>
+                    <p>A: 请检查配置文件中相应功能是否已启用，或者尝试使用创意模式查找。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 如何卸载模组？</h3>
+                    <p>A: 只需从 .minecraft/mods 文件夹中删除模组文件即可。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 模组支持多人游戏吗？</h3>
+                    <p>A: 是的，支持多人游戏。所有玩家都需要安装相同的模组版本。</p>
+                </div>
+            </section>
+
+            <!-- 支持与反馈 -->
+            <section class="doc-section">
+                <h2>支持与反馈</h2>
+                <p>如果您在使用过程中遇到问题或有任何建议，欢迎通过以下方式联系我们：</p>
+                <ul>
+                    <li>📧 Email: support@gqdocs.com</li>
+                    <li>💬 Discord: 加入我们的服务器</li>
+                    <li>🐛 Bug Report: 在官方论坛提交 Issue</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GQDocs. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">隐私政策</a>
+                <a href="#">服务条款</a>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

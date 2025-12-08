@@ -19,7 +19,7 @@
 
 /* ===== 工具部分 ===== */
 .tools-section {
-    padding: 3rem 0;
+    padding: 3rem 20px;
 }
 
 /* ===== 过滤按钮 ===== */
@@ -126,7 +126,7 @@
 /* ===== 工具使用指南 ===== */
 .tools-guide {
     background-color: var(--light-color);
-    padding: 3rem 0;
+    padding: 3rem 20px;
     margin-top: 3rem;
 }
 
@@ -186,6 +186,14 @@
         font-size: 2rem;
     }
 
+    .tools-section {
+        padding: 2rem 16px;
+    }
+
+    .tools-guide {
+        padding: 2rem 16px;
+    }
+
     .filter-buttons {
         gap: 0.5rem;
     }
@@ -201,5 +209,40 @@
 
     .guide-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .tools-header p {
+        font-size: 1rem;
+    }
+
+    .tools-section {
+        padding: 1.5rem 12px;
+    }
+
+    .tools-guide {
+        padding: 1.5rem 12px;
+    }
+
+    .tool-card {
+        padding: 1.5rem;
+    }
+
+    .tool-icon {
+        font-size: 2.5rem;
+    }
+
+    .filter-buttons {
+        gap: 0.25rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
     }
 }

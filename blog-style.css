@@ -19,7 +19,7 @@
 
 /* ===== 博客容器 ===== */
 .blog-container {
-    padding: 3rem 0;
+    padding: 3rem 20px;
 }
 
 .blog-container .container {
@@ -311,6 +311,10 @@
         font-size: 2rem;
     }
 
+    .blog-container {
+        padding: 2rem 16px;
+    }
+
     .blog-container .container {
         grid-template-columns: 1fr;
     }
@@ -335,5 +339,27 @@
 
     .sidebar-widget {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container {
+        padding: 1.5rem 12px;
+    }
+
+    .blog-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .blog-header p {
+        font-size: 1rem;
+    }
+
+    .blog-post {
+        padding: 1.5rem;
+    }
+
+    .post-header h2 {
+        font-size: 1.4rem;
     }
 }
